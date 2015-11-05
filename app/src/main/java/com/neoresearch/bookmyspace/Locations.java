@@ -138,6 +138,7 @@ public class Locations extends Fragment implements View.OnClickListener {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     loc_name=adapter.getItem(position).toString();
+                    new DeleteLocation().execute();
                     Toast.makeText(getActivity().getApplicationContext(), "You Clicked on : " + adapter.getItem(position), Toast.LENGTH_SHORT).show();
                 }
             });
