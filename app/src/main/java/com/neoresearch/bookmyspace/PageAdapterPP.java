@@ -9,7 +9,7 @@ import java.util.List;
 public class PageAdapterPP extends FragmentPagerAdapter {
 
 
-        final int PAGE_COUNTPP = 3;
+        final int PAGE_COUNTPP = 2;
 
         public PageAdapterPP(FragmentManager fm) {
 
@@ -31,7 +31,6 @@ public class PageAdapterPP extends FragmentPagerAdapter {
             switch (position) {
                 case 0:
                     Locations loc = new Locations();
-
                      return loc;
 
                   //  Login log=new Login();
@@ -43,9 +42,9 @@ public class PageAdapterPP extends FragmentPagerAdapter {
 
                    // Register r=new Register();
                    // return r;
-                case 2:
+             /*   case 2:
                     LocationsMap lm=new LocationsMap();
-                    return lm;
+                    return lm;*/
 
             }
             return null;
